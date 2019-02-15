@@ -1,0 +1,66 @@
+<!--pages/app/rank/rank.wxml-->
+<view class="rankbg">
+
+  <radio-group bindchange="rank_change">
+    <label class="radio">
+      <radio value="grade" checked="{{grade_checked}}"/>
+      <view>年级榜</view>
+    </label>
+    <label class="radio">
+      <radio value="world"  checked="{{!grade_checked}}"/>
+      <view>总榜</view>
+    </label>
+  </radio-group>
+
+  <view class="ranklist">
+    <view class="top3">
+      <view class="NO2">
+        <image src="{{ranklist[1].avatarurl}}"></image>
+        <view class="NO2_name">
+          <view>{{ranklist[1].nickname}}</view>
+          <view>{{ranklist[1].score}}分</view>
+        </view>
+      </view>
+      <view class="NO1">
+        <image src="{{ranklist[0].avatarurl}}"></image>
+        <view class="NO1_name">
+          <view>{{ranklist[0].nickname}}</view>
+          <view>{{ranklist[0].score}}分</view>
+        </view>
+      </view>
+      <view class="NO3">
+        <image src="{{ranklist[2].avatarurl}}"></image>
+        <view class="NO3_name">
+          <view>{{ranklist[2].nickname}}</view>
+          <view>{{ranklist[2].score}}分</view>
+        </view>
+      </view>
+    </view>
+
+    <scroll-view scroll-y class=" top20 ">
+      <view class="list" wx:for="{{ranklist_data}}" wx:key="id">
+        <view class="rankNO">{{index+4}}</view>
+        <view class="rankinfo">
+          <view class="avatar">
+            <image src="{{ranklist_data[index].avatarurl}}">
+            </image>
+            <text class="name">{{ranklist_data[index].nickname}}</text>
+          </view>
+          <text class="score">{{ranklist_data[index].score}}分</text>
+        </view>
+      </view>
+    </scroll-view>
+
+    <view class="list myrank">
+      <view class="rankNO">{{myrank}}</view>
+      <view class="rankinfo">
+        <view class="avatar">
+          <image src="{{myavatarURL}}">
+          </image>
+          <view class="name">{{mynickName}}</view>
+        </view>
+        <view class="score">{{myScore}}</view>
+      </view>
+    </view>
+  </view>
+</view>

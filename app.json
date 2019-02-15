@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/app/home/home",
+    "pages/app/unlock/unlock",
+    "pages/app/power/power",
+		"pages/app/grade/grade",
+    "pages/app/paper/paper",
+    "pages/app/rank/rank",
+    "pages/app/mission/mission",
+    "pages/app/rule/rule"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7adef8",
+    "navigationBarTitleText": "学霸冲冲冲",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#140b28",
+    "disableScroll": true
+  }
+}

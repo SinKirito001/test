@@ -1,0 +1,453 @@
+/* pages/app/home/home.wxss */
+
+.home_bg {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/home_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display:flex;
+  flex-direction: column;
+  text-align:center;
+  align-items: center;
+  justify-content: space-around; */
+}
+
+.home_container {
+  width: 630rpx;
+  position: absolute;
+  top: 80rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.home_userinfo {
+  height: 284rpx;
+  background: #4b6fca url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/home_userinfobg.png") no-repeat;
+  background-size: contain;
+  border-radius: 15rpx;
+  padding: 80rpx 40rpx 40rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.home_userinfo>navigator, .home_userinfo>view:last-child {
+  height: 50rpx;
+  color: #fff;
+}
+
+.home_grade {
+  line-height: 45rpx;
+  background-size: 49rpx 50rpx;
+  padding-left: 50rpx;
+  width: 120rpx;
+  font-size: small;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/icon_home_grade.png");
+}
+.home_grade .grade {
+  display: inline-block;
+}
+
+.home_grade text {
+  padding: 0 20rpx 0 0;
+}
+
+.home_grade:after {
+  content: '';
+  font-size: 0;
+  width: 0;
+  height: 0;
+  border-top: 12rpx solid transparent;
+  border-bottom: 12rpx solid transparent;
+  border-left: 12rpx solid #dfe8ff;
+  vertical-align: middle;
+}
+
+.home_score {
+  line-height: 50rpx;
+  background-size: 50rpx 47rpx;
+  padding-left: 50rpx;
+  width: 120rpx;
+  font-size: small;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/icon_home_score.png");
+}
+
+.home_share {
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/icon_home_share.png") no-repeat;
+  background-size: cover;
+}
+
+.home_gate {
+  height: 280rpx;
+  background: linear-gradient(to bottom right, #ff6f6f, #ff5757);
+  border-radius: 15rpx;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  margin: 30rpx 0;
+}
+
+.home_gate_text text, .home_rank text, .home_power text {
+  color: #ffefef;
+  display: flex;
+  text-shadow: #fb5454;
+}
+
+.home_gate_text text:first-child {
+  font-size: 48rpx;
+}
+
+.home_gate_text text:last-child {
+  font-size: small;
+  margin-top: 20rpx;
+}
+
+.home_gate_img image {
+  width: 200rpx;
+  height: 164rpx;
+}
+
+.rankAndPower {
+  display: flex;
+  height: 250rpx;
+  justify-content: space-between;
+}
+
+.home_rank {
+  width: 260rpx;
+  background: linear-gradient(to bottom right, #976aeb, #8654e5);
+  border-radius: 15rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home_rank text {
+  align-self: flex-start;
+}
+
+.home_rank image {
+  width: 237rpx;
+  height: 133rpx;
+}
+
+.home_power {
+  width: 280rpx;
+  background: linear-gradient(to bottom right, #47c920, #3fb71b);
+  border-radius: 15rpx;
+  padding: 20rpx 0 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home_power image {
+  width: 171rpx;
+  height: 184rpx;
+  align-self: flex-end;
+}
+
+.topcrown {
+  position: absolute;
+  top: -30rpx;
+  width: 83rpx;
+  height: 61rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 0;
+  border-radius: 0;
+  z-index:999;
+}
+
+.home_userinfo .charts_avatar {
+  position: relative;
+}
+.charts_avatar navigator,.power{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:200rpx;
+}
+.charts_avatar navigator text,.power text{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  max-width:200rpx;
+}
+.homebg {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/homebg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.gradesection {
+  display: flex;
+  /* justify-content: space-around; */
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  /* top: 60rpx; */
+  right: 10rpx;
+  bottom: 0;
+  left: 20rpx;
+  position: absolute;
+  flex-direction: column;
+}
+.gradesection view{
+  position: absolute;
+}
+
+.twogrades {
+  display: flex;
+  justify-content: space-around;
+  width: 630rpx;
+  height: 400rpx;
+}
+
+.onegrade {
+  height: 400rpx;
+}
+
+.grade1 {
+  animation: swing_vertical 10s cubic-bezier(0, 0, 0.25, 1) infinite;
+  animation-direction: alternate;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade7_v_0_1_4.png");
+  background-size: 160rpx auto;
+  background-repeat: no-repeat;
+  width: 200rpx;
+  height: 300rpx;
+  left:300rpx;
+  top:400rpx;
+}
+.grade1_checked {
+  animation-play-state: paused;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade7_v_0_1_4_active.png");
+  background-repeat: no-repeat;
+  background-size: 180rpx auto;
+  width: 180rpx;
+  height: 270rpx;
+  left:300rpx;
+  top:400rpx;
+}
+
+.grade2 {
+  animation: swing_vertical 10s ease-in infinite;
+  animation-direction: alternate;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade8_v_0_1_4.png");
+  background-size:200rpx auto;
+  background-repeat: no-repeat;
+  width: 200rpx;
+  height: 300rpx;
+  align-self: flex-start;
+  top:500rpx;
+  left:50rpx;
+}
+.grade2_checked {
+  animation-play-state: paused;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade8_v_0_1_4_active.png");
+  background-repeat: no-repeat;
+  background-size: 200rpx auto;
+  width: 200rpx;
+  height: 300rpx;
+  align-self: flex-start;
+  top:500rpx;
+  left:50rpx;
+}
+
+.grade3 {
+  animation: swing_vertical 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  animation-direction: alternate;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade9_v_0_1_4.png");
+  background-size:200rpx auto;
+  background-repeat: no-repeat;
+  width: 200rpx;
+  height: 300rpx;
+  top:600rpx;
+  right: 50rpx;
+}
+.grade3_checked {
+  animation-play-state: paused;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade9_v_0_1_4_active.png");
+  background-repeat: no-repeat;
+  background-size: 200rpx auto;
+  width: 200rpx;
+  height: 300rpx;
+  top:600rpx;
+  right: 50rpx;
+}
+
+.grade4 {
+  animation: swing_vertical 10s cubic-bezier(0, 0, 0.25, 1) infinite;
+  animation-direction: alternate;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade4_v_0_1_4.png");
+  background-size: 150rpx auto;
+  background-repeat: no-repeat;
+  width: 150rpx;
+  height:220rpx;
+  left:200rpx;
+  top:30rpx;
+}
+.grade4_checked {
+  animation-play-state: paused;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade4_v_0_1_4_active.png");
+  background-repeat: no-repeat;
+  background-size: 170rpx auto;
+  width: 170rpx;
+  height:250rpx;
+  left:200rpx;
+  top:30rpx;
+}
+
+.grade5 {
+  animation: swing_vertical 10s cubic-bezier(0, 0, 0.25, 1) infinite;
+  animation-direction: alternate;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade5_v_0_1_4.png");
+  background-size: 100rpx auto;
+  background-repeat: no-repeat;
+  width: 150rpx;
+  height: 150rpx;
+  right: 50rpx;
+  top:180rpx;
+}
+.grade5_checked {
+  animation-play-state: paused;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade5_v_0_1_4_active.png");
+  background-repeat: no-repeat;
+  background-size: 130rpx auto;
+  width: 180rpx;
+  height: 2000rpx;
+  right: 50rpx;
+  top:180rpx;
+}
+
+.grade6 {
+  animation: swing_vertical 10s cubic-bezier(0, 0, 0.25, 1) infinite;
+  animation-direction: alternate;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade6_v_0_1_4.png");
+  background-size: 100rpx auto;
+  background-repeat: no-repeat;
+  width: 150rpx;
+  height: 150rpx;
+  left:60rpx;
+  top:200rpx;
+}
+.grade6_checked {
+  animation-play-state: paused;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/grade6_v_0_1_4_active.png");
+  background-repeat: no-repeat;
+  background-size: 130rpx auto;
+  width: 180rpx;
+  height: 200rpx;
+  left:60rpx;
+  top:200rpx;
+}
+
+.start {
+  width: 350rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 150rpx;
+}
+
+.start image {
+  width: 350rpx;
+}
+
+.cloud1 {
+  height: 50rpx;
+  width: 200rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 120rpx;
+}
+
+.cloud1 .cloud {
+  width: 120rpx;
+  animation: swing_horizontal 30s linear infinite;
+}
+
+.cloud2 {
+  height: 50rpx;
+  width: 200rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 200rpx;
+}
+
+.cloud2 .cloud {
+  width: 120rpx;
+  animation: swing_horizontal 30s ease-in-out infinite;
+}
+
+.cloud3 {
+  height: 50rpx;
+  width: 200rpx;
+  position: absolute;
+  left: 150rpx;
+  top: 500rpx;
+}
+
+.cloud3 .cloud {
+  width: 150rpx;
+  animation: swing_horizontal 20s ease-in infinite;
+}
+
+.cloud4 {
+  height: 50rpx;
+  width: 200rpx;
+  position: absolute;
+  right: 150rpx;
+  bottom: 400rpx;
+}
+
+.cloud4 .cloud {
+  width: 120rpx;
+  animation: swing_horizontal 50s ease-in-out infinite;
+}
+
+.home_share button {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.naviRule {
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: #225506;
+  font-size: small;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.naviRule image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}

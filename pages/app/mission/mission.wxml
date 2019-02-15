@@ -1,0 +1,17 @@
+<view class="missionbg">
+  <view class="missionroad">
+    <view bindtap="start" data-lv="{{index+1}}" wx:key="id" wx:for="{{missionArray}}" class="mission{{index+1}}">
+    <view class="current" wx:if="{{item.currentMission}}">
+    <image class="mission_avatar" src="{{avatar}}"></image>
+  </view>
+      <view class="mission {{item.additionClass}}">
+        <text>{{index+1}}</text>
+        <view class="stars">
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

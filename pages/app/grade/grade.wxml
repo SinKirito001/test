@@ -1,0 +1,25 @@
+<view class="homebg container">
+  <view class="cloud1">
+    <image class="cloud" mode="widthFix" src="{{cdn}}/small_cloud.png"></image>
+  </view>
+  <view class="cloud2">
+    <image class="cloud" mode="widthFix" src="{{cdn}}/small_cloud.png"></image>
+  </view>
+  <view class="cloud3">
+    <image class="cloud" mode="widthFix" src="{{cdn}}/small_cloud.png"></image>
+  </view>
+  <view class="cloud4">
+    <image class="cloud" mode="widthFix" src="{{cdn}}/small_cloud.png"></image>
+  </view>
+  <view class="gradesection">
+    <view class="{{gradeClass[0]}}" data-grade-Type="0" bindtap="selectGrade"></view>
+    <view class="{{gradeClass[1]}}" data-grade-Type="1" bindtap="selectGrade"></view>
+    <view class="{{gradeClass[2]}}" data-grade-Type="2" bindtap="selectGrade"></view>
+    <view class="{{gradeClass[3]}}" data-grade-Type="3" bindtap="selectGrade"></view>
+    <view class="{{gradeClass[4]}}" data-grade-Type="4" bindtap="selectGrade"></view>
+    <view class="{{gradeClass[5]}}" data-grade-Type="5" bindtap="selectGrade"></view>
+  </view>
+  <view class="start">
+    <image id="startGame" mode="widthFix" bindtap="start" src="{{starGameSrc}}"></image>
+  </view>
+</view>

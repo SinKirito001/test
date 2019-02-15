@@ -1,0 +1,44 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-color: #140b28;
+  background-size: cover;
+} 
+page{
+  height: 100%;
+}
+.opacity_hide{
+  opacity: 0;
+}
+.hide{
+  display: none !important;
+}
+.mask{
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  z-index: 100;
+  top:0rpx;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+}
+.mask image{
+  width:100%;
+  height: 100%;
+}
+
+@import "pages/assets/style/rule.wxss";
+@import "pages/assets/style/unlock.wxss";
+@import "pages/assets/style/rank.wxss";
+@import "pages/assets/style/power.wxss";
+@import "pages/assets/style/paper.wxss";
+@import "pages/assets/style/mission.wxss";
+@import "pages/assets/style/home.wxss";
+@import "animation.wxss";

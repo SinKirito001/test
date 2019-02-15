@@ -1,0 +1,178 @@
+/* pages/app/mission/mission.wxss */
+
+.missionbg {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/mission_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.missionroad {
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/mission_road.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600rpx;
+  position: absolute;
+  top: 60rpx;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.missionroad>view {
+  position: absolute;
+  width: 100rpx;
+  height: 96rpx;
+}
+
+.mission_locked {
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/misson_locked.png");
+  background-size: cover;
+  padding: 10rpx 10rpx 0 0;
+}
+
+.mission_locked>.stars>view {
+  width: 20rpx;
+  height: 20rpx;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/star-locked.png");
+  background-size: contain;
+  display: inline-flex;
+}
+
+.mission_locked>.stars, .mission_3star>.stars, .mission_2star>.stars,
+.mission_1star>.stars, .mission_0star>.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission_locked>text {
+  color: #797979;
+  padding-left: 25rpx;
+  font-weight: bold;
+}
+
+.mission {
+  width: 80rpx;
+  height: 80rpx;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.mission10 {
+  top: 205rpx;
+  left: 276rpx;
+}
+
+.mission9 {
+  top: 296rpx;
+  left: 150rpx;
+}
+
+.mission8 {
+  top: 394rpx;
+  left: 17rpx;
+}
+
+.mission7 {
+  top: 497rpx;
+  left: 115rpx;
+}
+
+.mission6 {
+  top: 497rpx;
+  left: 320rpx;
+}
+
+.mission5 {
+  top: 578rpx;
+  left: 500rpx;
+}
+
+.mission4 {
+  top: 730rpx;
+  left: 396rpx;
+}
+
+.mission3 {
+  top: 730rpx;
+  left: 188rpx;
+}
+
+.mission2 {
+  top: 820rpx;
+  left: 55rpx;
+}
+
+.mission1 {
+  top: 918rpx;
+  left: 180rpx;
+}
+
+.mission_3star, .mission_2star, .mission_1star, .mission_0star {
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/mission_open.png");
+  background-size: cover;
+  text-align: center;
+}
+
+.mission_3star>.stars>view, .mission_2star>.stars>view:first-child,
+.mission_2star>.stars>view:nth-child(2), .mission_1star>.stars>view:first-child {
+  width: 20rpx;
+  height: 20rpx;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/star-open1.png");
+  background-size: contain;
+  display: inline-flex;
+}
+
+.mission_3star>text, .mission_2star>text, .mission_1star>text {
+  color: #fff561;
+  text-shadow: 5rpx 5rpx 5rpx #ddad45;
+}
+
+.mission_2star>.stars>view:last-child, .mission_1star>.stars>view:nth-child(2),
+.mission_1star>.stars>view:last-child, .mission_0star>.stars>view {
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/star-open2.png");
+  width: 20rpx;
+  height: 20rpx;
+  background-size: contain;
+  display: inline-flex;
+}
+
+.mission_0star>text {
+  color: #a4720d;
+}
+
+.current {
+  width: 100rpx;
+  height: 107rpx;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/mission_current.png");
+  background-size: 25rpx 16rpx;
+  background-repeat: no-repeat;
+  background-position:bottom center;
+  text-align: center;
+  padding-top: 6rpx;
+  position: absolute;
+  top: -105rpx;
+  z-index: 999;
+}
+
+.userinfo_avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.mission_avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  border: 10rpx solid #fff;
+}

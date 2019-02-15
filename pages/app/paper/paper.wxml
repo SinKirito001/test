@@ -1,0 +1,68 @@
+<view class="paperbg">
+  <view class="paperinfo">
+    <view class="questionindex">
+      第{{current_question + 1}}/5题
+    </view>
+    <image class="paper_avatar" src="{{avatar}}"></image>
+    <view class="score">
+      <image src="http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/icon_paper_score.png"></image>
+      {{sum_score}}
+    </view>
+  </view>
+  <view class="progressbar">
+    <progress percent="{{time_percent}}" active-mode="forwards" stroke-width="12" activeColor="#3b7020" backgroundColor="#fe6857" active/>
+  </view>
+  <view class='number {{number_animat}}'>
+    <text>{{question_info.subject}}</text>
+  </view>
+  <view class="questionlist answer {{answer_animat}}">
+    <view class="question">{{question_info.title}}</view>
+    <view class="choiceitem {{s_A}}" hover-class="choiceSelected" bindtap="answer_sure" data-val="A">
+      {{question_info.A}}
+    </view>
+    <view class="choiceitem {{s_B}}" hover-class="choiceSelected" bindtap="answer_sure" data-val="B">
+      {{question_info.B}}
+    </view>
+    <view class="choiceitem {{s_C}}" hover-class="choiceSelected" bindtap="answer_sure" data-val="C">
+      {{question_info.C}}
+    </view>
+    <view class="choiceitem {{s_D}}" hover-class="choiceSelected" bindtap="answer_sure" data-val="D">
+      {{question_info.D}}
+    </view>
+  </view>
+</view>
+<view class="modal-mask {{star_count=='stars_0'?'':'mask_ray'}}" wx:if="{{showModal}}" style=""></view>
+<view class="modal-dialog {{star_count}}" wx:if="{{showModal}}">
+  <view class="star"></view>
+  <view class="modal-content">
+    <view class="modal_scoretxt">
+      <view class="modal_score">
+        {{sum_score}}
+      </view>分
+    </view>
+    <view class="modal_tips">
+      {{modal_tips}}
+    </view>
+    <view class="modal_btn" data-value="{{pass_number}}" bindtap='next_pass' wx:if="{{!pass_over}}">{{modal_btn_text}}</view>
+    <button open-type="share" class="share_button" hover-class="share_button_hover">
+      <view class="modal_btn" wx:if="{{pass_over}}">炫耀成绩</view>
+    </button>
+    <view wx:if="{{star_count=='stars_4'}}" class="star4_tips">
+      <button bindtap='leads_share'>
+        我在挑战学霸冲冲冲，不服来战！
+      </button>
+    </view>
+  </view>
+  <view class="modal-mask_ribbons"></view>
+</view>
+<view class="mask" wx:if="{{mask_hide}}">
+  <image src='{{cdn}}/mask.png' />
+</view>
+
+<view class="hide">
+  <audio src="{{cdn}}/win.mp3" id="music_win" controls style="width:0;height:0" class="hide"></audio>
+</view>
+
+<view class="hide">
+  <audio src="{{cdn}}/solt.mp3" id="music_solt" controls style="width:0;height:0" class="hide"></audio>
+</view>

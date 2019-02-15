@@ -1,0 +1,43 @@
+<view class="home_bg">
+  <view class="home_container">
+    <view class="home_share">
+      <button  open-type="share"></button>
+    </view>
+    <view class="home_userinfo">
+      <navigator class="home_grade"  url='/pages/app/grade/grade?grade=0' hover-class="none">
+        <view class="grade">
+          <text>{{grade_name}}</text>
+        </view>
+      </navigator>
+      <view class="charts_avatar">
+       <image class="topcrown" src="{{cdn}}/home_crown.png" wx:if="{{isStageClear==true}}"></image>
+       <navigator url='/pages/app/power/power' hover-class="none">
+        <image class="avatar_image" src="{{userInfo.avatarUrl}}"></image>
+        <text>{{userInfo.nickName}}</text>
+      </navigator>
+      </view>
+      <view class="home_score">{{score}}</view>
+    </view>
+    <view class="home_gate"  bindtap="pass_go">
+      <view class="home_gate_text">
+        <text>闯关赛</text>
+        <text>2018.03.10-2018.04.28</text>
+      </view>
+      <view class="home_gate_img">
+        <image src="{{cdn}}/home_crown.png"></image>
+      </view>
+    </view>
+    <view class="rankAndPower">
+      <navigator class="home_rank" url='/pages/app/rank/rank'>
+        <text>排行榜</text>
+        <image src="{{cdn}}/home_ranking.png"></image>
+      </navigator>
+      <navigator class="home_power" url='/pages/app/power/power'>
+        <text>能力图谱</text>
+        <image src="{{cdn}}/home_muscle.png"></image>
+      </navigator>
+    </view>
+  </view>
+  <navigator hover-class="none" class="naviRule" url='/pages/app/rule/rule'><image src="http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/explain.png"></image>游戏规则</navigator>
+</view>
+<audio id="myAudio" src="{{cdn}}/music.mp3" id="myAudio" controls style="width:0;height:0" class="hide" loop="true"></audio>

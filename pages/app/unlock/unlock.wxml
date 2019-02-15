@@ -1,0 +1,21 @@
+<view class="modal-mask unlock_ray" style="opacity:1;"></view>
+<view class="modal-dialog unlock">
+  <image src="{{cdn}}/blocking.png"></image>
+   <view class="unlock_share" wx:if="{{ops == 'share'}}">
+      <text>请好友帮忙解锁</text>
+      <view>
+        <button open-type="share" class="unblock_share_btn">分享好友获取通关机会</button></view>
+    </view> 
+
+  <view class="unlock_bind" wx:if="{{ops == 'leads'}}">
+    <text>绑定手机号进行解锁</text>
+    <view bindtap="inputActive" class="{{isInputPhoneActive?'input_container_active':'input_container'}}" data-input-type="phone" >
+      <input value="{{mobile}}" type="number" bindinput="bindKeyInput" maxlength="11" placeholder="请输入手机号" />
+    </view>
+    <view bindtap="inputActive" class="{{isInputCodeActive?'input_container_active':'input_container'}}" data-input-type="code" maxlength="11">
+      <input type="number" value="{{code}}" type="number" bindinput="bindKeyInputCode" maxlength="4" placeholder="验证码"/>
+      <button class="getcode" bindtap="send_msg" disabled="{{disabled}}">{{time_text}}</button>
+    </view>
+    <button class="submit" bindtap="submit">提交</button>
+  </view>
+</view>

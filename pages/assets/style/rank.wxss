@@ -1,0 +1,191 @@
+.rankbg {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/rank_bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+radio-group view {
+  display: inline-block;
+  width: 200rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #4b6fca;
+  background: #f2f6ff;
+  border: 1px solid #4b6fca;
+}
+
+radio-group label:first-child view {
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+}
+
+radio-group label:last-child view {
+  border-top-right-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+
+radio[checked]+view {
+  background: #4b6fca;
+  color: #f2f6ff;
+}
+
+radio {
+  display: none;
+}
+
+.NO1 {
+  width: 218rpx;
+  height: 320rpx;
+  background: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/crown-1.png") top center;
+  background-size: 120rpx auto;
+  background-repeat: no-repeat;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  position: relative;
+}
+
+.NO2 {
+  width: 180rpx;
+  height: 270rpx;
+  background: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/crown-2.png") top center;
+  background-size: 100rpx auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.NO3 {
+  width: 180rpx;
+  height: 270rpx;
+  background: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/crown-3.png") top center;
+  background-size: 100rpx auto;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.NO1_name {
+  width: 218rpx;
+  height: 109rpx;
+  background: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/y-b_g.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 205rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 24rpx;
+  color: #846c04;
+  padding-top: 14rpx;
+}
+
+.NO2_name, .NO3_name {
+  width: 180rpx;
+  height: 81rpx;
+  background: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/b-b_g.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 167rpx;
+  position: absolute;
+  text-align: center;
+  font-size: 20rpx;
+  color: #d1e7f9;
+  padding-top: 8rpx;
+}
+
+.NO1 image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 67rpx;
+  border: 10rpx solid #fcd012;
+}
+
+.NO2 image, .NO3 image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 55rpx;
+  border: 10rpx solid #c2f4ff;
+}
+
+.ranklist .top3 {
+  display: flex;
+  align-items: flex-end;
+  margin: 30rpx 0 20rpx;
+}
+
+.top20 {
+  height: 550rpx;
+  background: #f8feff;
+  color: #666;
+  border-radius: 10rpx;
+}
+
+view.list {
+  display: flex;
+  align-items: center;
+  font-size: small;
+  padding: 0 30rpx;
+}
+
+view.list .rankNO {
+  font-weight: bold;
+  font-style: italic;
+  color: #999;
+  width: 80rpx;
+}
+
+view.list .rankinfo {
+  display: flex;
+  justify-content: space-between;
+  width: 490rpx;
+  align-items: center;
+  border-bottom: 1px solid #e7e7e7;
+  height: 110rpx;
+}
+
+view.list .rankinfo view {
+  display: flex;
+}
+
+view.list .rankinfo .avatar image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  display: block;
+  margin-right: 25rpx;
+}
+
+view.list .rankinfo .avatar {
+  align-items: center;
+}
+
+.myrank {
+  background: #f8feff;
+  color: #666;
+  border-radius: 10rpx;
+  margin-top: 10rpx;
+}
+
+.NO1_name>view:first-child,.NO2_name>view:first-child,.NO3_name>view:first-child{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

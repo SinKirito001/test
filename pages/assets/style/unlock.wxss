@@ -1,0 +1,100 @@
+/* pages/app/unlock/unlock.wxss */
+
+/* 解锁样式 */
+
+.unlock_ray {
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/unlock_ray.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.unlock{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.unlock>image{
+  width:436rpx;
+  height:506rpx;
+}
+.unlock_share,.unlock_bind{
+  text-align:center;
+}
+.unlock_share text,.unlock_bind text{
+  color:#feda68;
+  font-size:32rpx;
+}
+.unblock_share_btn {
+  border: 10rpx solid #feda68;
+  box-shadow: 0 5rpx 10rpx #dfb413;
+  background: #f05e34;
+  width: 420rpx;
+  height: 90rpx;
+  line-height: 70rpx;
+  color: #d8ffc5;
+  border-radius: 70rpx;
+  text-align: center;
+  font-size: 34rpx;
+  margin-top:20rpx;
+}
+
+.unlock_bind .input_container{
+  height:70rpx;
+  line-height:70rpx;
+  width:400rpx;
+  background:#d5d2cb;
+  border-radius:50rpx;
+  text-align:left;
+  padding-left:30rpx;
+  font-size:small;
+  color:#666;
+  box-shadow:3rpx 3rpx 3rpx #bcb7ad inset;
+  position:relative;
+}
+.unlock_bind .input_container_active{
+  height:70rpx;
+  line-height:70rpx;
+  width:400rpx;
+  background:#fff;
+  border-radius:50rpx;
+  text-align:left;
+  padding-left:30rpx;
+  font-size:small;
+  color:#666;
+  box-shadow:3rpx 3rpx 3rpx #bcb7ad inset;
+  position:relative;
+}
+.unlock_bind .input_container input,.unlock_bind .input_container_active input{
+  height:70rpx;
+  line-height:70rpx;
+}
+.unlock_bind view:nth-child(2){
+  margin:20rpx 0;
+}
+.getcode{
+  height:70rpx;
+  line-height:70rpx;
+  background:#64a911;
+  border-top-right-radius:50px;
+  border-bottom-right-radius:50px;
+  width:200rpx;
+  color:#fffabe;
+  font-size:small;
+  position:absolute;
+  top:0;
+  right:0;
+  z-index: 99;
+}
+.submit{
+  height:70rpx;
+  line-height:70rpx;
+  background:#64a911;
+  border-radius:50rpx;
+  width:430rpx;
+  color:#fffabe;
+  font-size:small;
+  top:1rpx;
+  right:-1rpx;
+  z-index: 99;
+  margin-top:20rpx;
+}

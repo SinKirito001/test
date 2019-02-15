@@ -1,0 +1,25 @@
+<view class="chartsbg">
+  <view class="charts_inner">
+    <view class="charts_userinfo">
+      <view class="charts_grade">{{grade}}</view>
+      <view class="charts_avatar power">
+        <image class="topcrown" src="{{cdn}}/home_crown.png" wx:if="{{isStageClear}}"></image>
+        <image class="avatar_image" src="{{avatar}}">
+        </image>
+        <text>{{nickname}}</text>
+      </view>
+      <view class="charts_score">
+        {{score}}分</view>
+    </view>
+    <canvas canvas-id="pieCanvas" disable-scroll="true" class="canvas"></canvas>
+    <view class="charts_comment">
+      <view>{{power_tips_1}}</view>
+      <view>{{power_tips_2}}</view>
+    </view>
+  </view>
+
+  <button open-type="share" class="share">
+    <image src="http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/share.png"></image>
+    <view>分享到其他群 继续看排行</view>
+  </button>
+</view>

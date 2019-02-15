@@ -1,0 +1,115 @@
+.canvas{
+  width:100%;
+  height: 400rpx;
+}
+
+.chartsbg {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/charts_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.charts_inner {
+  position: absolute;
+  top: 100rpx;
+  bottom: 150rpx;
+  left: 65rpx;
+  right: 65rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.charts_userinfo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 270rpx;
+}
+
+.charts_avatar {
+  align-self: flex-start;
+  color:#dee9ff;
+  text-align:center;
+}
+
+.charts_avatar image.avatar_image{
+  width: 130rpx;
+  height: 130rpx;
+  border: 15rpx solid #6e90dc;
+  border-radius: 50%;
+  display:block;
+}
+
+.charts_userinfo>view:first-child, .charts_userinfo>view:last-child {
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+  background-size: 50rpx auto;
+  padding-left: 60rpx;
+  /* width:130rpx; */
+}
+
+.charts_grade {
+  background-size:49rpx 50rpx;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/icon_home_grade.png");
+  background-repeat:no-repeat;
+  background-position:left center;
+}
+
+.charts_score {
+  background-size:50rpx 47rpx;
+  background-image: url("http://pcp-guanjiastatics.oss-cn-shanghai.aliyuncs.com/xcx_pass/icon_home_score.png");
+  background-repeat:no-repeat;
+  background-position:left center;
+}
+
+.charts_comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.charts_comment>view:nth-child(1), .charts_comment>view:nth-child(2) {
+  font-size: small;
+  color: #acbeec;
+}
+
+.charts_status {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #dee9ff;
+  margin-top: 20rpx;
+}
+
+.share {
+  position: absolute;
+  bottom: 20rpx;
+  color: #e8ffd5;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size:small;
+}
+.share image{
+  height:65rpx;
+  width:65rpx;
+}
+
+button.share{
+  background:none;
+  line-height:40rpx;
+}
+.power{
+  position:relative;
+}

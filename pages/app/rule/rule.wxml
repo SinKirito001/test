@@ -1,0 +1,36 @@
+<view class="home_bg rulebg">
+  <image class="rule_banner" src="{{cdn}}/rule_banner.png"></image>
+  <view class="rule_inner">
+    <view class="rule_title">
+      闯关模式
+      <view class="rule_titile_tail">
+      </view>
+    </view>
+    <view class="rule_content">
+      <view id="gamerule">
+        <text class="sub_title">游戏规则</text>
+        <view class="detail_list">
+          <view>游戏采用“过关”方式，每关5道题，每题限时10秒，系统根据答题情况和耗时进行打分。5道题的总分为本关得分，大于一定分值即算过关。</view>
+        </view>
+        <view class="detail_list">
+          <view>每个年级10个关卡，通过全部10关即“通关”成功，系统根据10关的总分计算排名。</view>
+        </view>
+      </view>
+      <view id="pemission">
+        <text class="sub_title">闯关资格</text>
+        <view class="detail_list">
+          <view>通关后如果对得分和排名不满意，可以重新闯关。重新闯关的资格通过完善个人资料和好友分享获得。</view>
+        </view>
+      </view>
+      <!-- <view id="rewardrule">
+        <text class="sub_title">奖励规则</text>
+        <view class="detail_list">
+          <view>通关成功后可获得至少一次现金抽奖机会，总分排名越高，抽奖机会越多；</view>
+        </view>
+        <view class="detail_list">
+          <view>闯关活动从2月10日至2月28日，因活动期间排名会不断发生变化，因此抽奖机会将在活动结束后统一发放。</view>
+        </view>
+      </view> -->
+    </view>
+  </view>
+</view>

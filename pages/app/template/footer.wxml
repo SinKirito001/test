@@ -1,0 +1,7 @@
+<template name="footer">
+  <view class="menu">
+    <view>开始PK</view>
+    <view>排行榜</view>
+    <view>海选池</view>
+  </view>
+</template>
